@@ -10,9 +10,10 @@ public class DBConnector {
 	
 	public static Connection getConnection() {
 
+
 		try {
 			Class.forName("org.h2.Driver");
-			conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/C:\\Users\\Vlado\\Desktop\\Ivan\\stuDB", "sa", "");
+			conn = DriverManager.getConnection("jdbc:h2:tcp://localhost//home/whoisagp/Desktop/PhonesJavaAssignment/H2DB/phonesDB.h2.db\n", "sa", "");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

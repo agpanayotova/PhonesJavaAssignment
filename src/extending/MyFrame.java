@@ -118,13 +118,15 @@ public class MyFrame extends JFrame{
 	JTextField lastNameTF = new JTextField();
 	
 	JTabbedPane tabPane = new JTabbedPane();
-	
+
+
 	public MyFrame() {
 		
 		this.add(tabPane);
 		this.setVisible(true);
-		this.setSize(400, 400);
+		this.setSize(550, 450);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setBounds(650,300,650,500);
 		
 		
 		tabPane.addTab("Phone", phones);
